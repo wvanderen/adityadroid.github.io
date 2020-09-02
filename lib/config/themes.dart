@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 darkTheme(context) {
   return ThemeData(
     fontFamily: 'GoogleSansRegular',
@@ -18,16 +19,17 @@ darkTheme(context) {
     ),
   );
 }
+
 lightTheme(context) {
   return ThemeData(
-     fontFamily: 'GoogleSansRegular',
-    primarySwatch: Colors.blue,
-    primaryColor: Colors.white,
-    accentColor: Colors.blue,
+    fontFamily: 'GoogleSansRegular',
+    primarySwatch: Colors.yellow,
+    primaryColor: Colors.yellow[300],
+    accentColor: Colors.yellow[300],
     disabledColor: Colors.grey,
-    cardColor: Colors.white,
-    canvasColor: Colors.white,
-    brightness: Brightness.light,
+    cardColor: Colors.transparent,
+    canvasColor: Colors.grey[800],
+    brightness: Brightness.dark,
     buttonTheme: Theme.of(context).buttonTheme.copyWith(
         colorScheme: ColorScheme.light(),
         buttonColor: Colors.blue,

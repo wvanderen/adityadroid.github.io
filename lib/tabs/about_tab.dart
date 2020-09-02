@@ -17,20 +17,20 @@ class AboutTab extends StatelessWidget {
             children: <Widget>[
               CircleAvatar(
                 radius: 100,
-                backgroundImage: Image.asset(Assets.avatar).image,
+                backgroundImage: Image.asset(Assets.photo7).image,
               ),
               SizedBox(
                 height: 20,
               ),
               Text(
-                'Aditya Gurjar',
+                'Dave Dorvil',
                 textScaleFactor: 4,
               ),
               SizedBox(
                 height: 20,
               ),
               Text(
-                'Android. Flutter. Cricket. Music.\nLikes Traveling.',
+                'Photographer & Videographer',
                 style: Theme.of(context).textTheme.caption,
                 textScaleFactor: 2,
                 textAlign: TextAlign.center,
@@ -46,17 +46,13 @@ class AboutTab extends StatelessWidget {
                     icon: SizedBox(
                         width: 20,
                         height: 20,
-                        child: Image.asset(Assets.github)),
-                    label: Text('Github'),
-                    onPressed: () => html.window
-                        .open(Constants.PROFILE_GITHUB, 'adityadroid'),
-                  ),
-                  FlatButton.icon(
-                    icon: SizedBox(
-                        width: 20,
-                        height: 20,
                         child: Image.asset(Assets.twitter)),
-                    label: Text('Twitter'),
+                    label: Text(
+                      'Twitter',
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),
+                    ),
                     onPressed: () => html.window
                         .open(Constants.PROFILE_TWITTER, 'adityadroid'),
                   ),
@@ -64,26 +60,13 @@ class AboutTab extends StatelessWidget {
                     icon: SizedBox(
                         width: 20,
                         height: 20,
-                        child: Image.asset(
-                            ThemeSwitcher.of(context).isDarkModeOn
-                                ? Assets.medium
-                                : Assets.medium_light)),
-                    label: Text('Medium'),
-                    onPressed: () => html.window
-                        .open(Constants.PROFILE_MEDIUM, 'adityadroid'),
-                  )
-                ],
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: <Widget>[
-                  FlatButton.icon(
-                    icon: SizedBox(
-                        width: 20,
-                        height: 20,
                         child: Image.asset(Assets.instagram)),
-                    label: Text('Instagram'),
+                    label: Text(
+                      'Instagram',
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),
+                    ),
                     onPressed: () => html.window
                         .open(Constants.PROFILE_INSTAGRAM, 'adityadroid'),
                   ),
@@ -92,21 +75,17 @@ class AboutTab extends StatelessWidget {
                         width: 20,
                         height: 20,
                         child: Image.asset(Assets.facebook)),
-                    label: Text('Facebook'),
+                    label: Text(
+                      'Facebook',
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),
+                    ),
                     onPressed: () => html.window
                         .open(Constants.PROFILE_FACEBOOK, 'adityadroid'),
                   ),
-                  FlatButton.icon(
-                    icon: SizedBox(
-                        width: 20,
-                        height: 20,
-                        child: Image.asset(Assets.linkedin)),
-                    label: Text('Linkedin'),
-                    onPressed: () => html.window
-                        .open(Constants.PROFILE_LINKEDIN, 'adityadroid'),
-                  )
                 ],
-              )
+              ),
             ],
           ),
         ),

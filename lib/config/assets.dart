@@ -1,4 +1,4 @@
-class Assets{
+class Assets {
   static const moon = 'assets/moon.png';
   static const avatar = 'assets/avatar.jpg';
   static const facebook = 'assets/facebook.png';
@@ -7,7 +7,7 @@ class Assets{
   static const linkedin = 'assets/linkedin.png';
   static const medium = 'assets/medium.png';
   static const medium_light = 'assets/medium_light.png';
-  static const twitter= 'assets/twitter.png';
+  static const twitter = 'assets/twitter.png';
   static const cocoapay = 'assets/works/cocoapay.png';
   static const facelyt = 'assets/works/facelyt.png';
   static const kharedi_now = 'assets/works/kharedi_now.png';
@@ -19,7 +19,14 @@ class Assets{
   static const savaari_consumer = 'assets/works/savaari_consumer.png';
   static const savaari_partner = 'assets/works/savaari_partner.png';
   static const trivz = 'assets/works/trivz.png';
-  static const truelancer ='assets/works/truelancer.png';
+  static const truelancer = 'assets/works/truelancer.png';
   static const vdrone = 'assets/works/vdrone.png';
   static const wheelie_repairs = 'assets/works/wheelie_repairs.png';
+  static const photo1 = 'assets/photos/photo1.jpg';
+  static const photo2 = 'assets/photos/photo2.jpg';
+  static const photo3 = 'assets/photos/photo3.jpg';
+  static const photo4 = 'assets/photos/photo4.jpg';
+  static const photo5 = 'assets/photos/photo5.jpg';
+  static const photo6 = 'assets/photos/photo6.jpg';
+  static const photo7 = 'assets/photos/photo7.jpg';
 }
