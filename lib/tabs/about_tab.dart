@@ -46,15 +46,15 @@ class AboutTab extends StatelessWidget {
                     icon: SizedBox(
                         width: 20,
                         height: 20,
-                        child: Image.asset(Assets.twitter)),
+                        child: Image.asset(Assets.youtube)),
                     label: Text(
-                      'Twitter',
+                      'Youtube',
                       style: TextStyle(
                         color: Colors.white,
                       ),
                     ),
-                    onPressed: () => html.window
-                        .open(Constants.PROFILE_TWITTER, 'adityadroid'),
+                    onPressed: () =>
+                        html.window.open(Constants.PROFILE_YOUTUBE, 'dave'),
                   ),
                   FlatButton.icon(
                     icon: SizedBox(
@@ -67,8 +67,8 @@ class AboutTab extends StatelessWidget {
                         color: Colors.white,
                       ),
                     ),
-                    onPressed: () => html.window
-                        .open(Constants.PROFILE_INSTAGRAM, 'adityadroid'),
+                    onPressed: () =>
+                        html.window.open(Constants.PROFILE_INSTAGRAM, 'dave'),
                   ),
                   FlatButton.icon(
                     icon: SizedBox(
@@ -81,8 +81,8 @@ class AboutTab extends StatelessWidget {
                         color: Colors.white,
                       ),
                     ),
-                    onPressed: () => html.window
-                        .open(Constants.PROFILE_FACEBOOK, 'adityadroid'),
+                    onPressed: () =>
+                        html.window.open(Constants.PROFILE_FACEBOOK, 'dave'),
                   ),
                 ],
               ),

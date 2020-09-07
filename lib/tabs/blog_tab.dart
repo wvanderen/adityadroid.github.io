@@ -30,23 +30,31 @@ class _BlogTabState extends State<BlogTab> {
       return Center(
         child: CircularProgressIndicator(),
       );
-    if(_showError){
+    if (_showError) {
       return Center(
-        child:Column(
-          mainAxisSize: MainAxisSize.min,
-          children: <Widget>[
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Text('Something went wrong',style: Theme.of(context).textTheme.headline,),
+          child: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: <Widget>[
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Text(
+              'Something went wrong',
+              style: Theme.of(context).textTheme.headline,
             ),
-            RaisedButton(
-              child: Text('Retry',style: Theme.of(context).textTheme.button.copyWith(color: Colors.white),),
-              elevation: 0.0,
-              onPressed:loadBlogs,
-            )
-          ],
-        )
-      );
+          ),
+          RaisedButton(
+            child: Text(
+              'Retry',
+              style: Theme.of(context)
+                  .textTheme
+                  .button
+                  .copyWith(color: Colors.white),
+            ),
+            elevation: 0.0,
+            onPressed: loadBlogs,
+          )
+        ],
+      ));
     }
     return ResponsiveWidget(
       largeScreen: Row(
@@ -70,7 +78,6 @@ class _BlogTabState extends State<BlogTab> {
   }
 
   Widget blogList() {
-
     return SingleChildScrollView(
       child: Padding(
         padding: const EdgeInsets.only(bottom: 16.0),
@@ -84,7 +91,13 @@ class _BlogTabState extends State<BlogTab> {
                 itemBuilder: (context, index) =>
                     BlogWidget(_blogs[index], index, _blogs.length)),
             RaisedButton(
-              child: Text('More',style: Theme.of(context).textTheme.button.copyWith(color: Colors.white),),
+              child: Text(
+                'More',
+                style: Theme.of(context)
+                    .textTheme
+                    .button
+                    .copyWith(color: Colors.white),
+              ),
               elevation: 0.0,
               onPressed: () =>
                   html.window.open(Constants.PROFILE_MEDIUM, 'adityadroid'),
@@ -102,13 +115,13 @@ class _BlogTabState extends State<BlogTab> {
     });
     final result = await _apiProvider.getBlogs();
     setState(() {
-      if(result==null) {
+      if (result == null) {
         _showError = true;
         _loadingData = false;
-      }else{
-      _blogs = result;
-      _showError = false;
-      _loadingData = false;
+      } else {
+        _blogs = result;
+        _showError = false;
+        _loadingData = false;
       }
     });
   }

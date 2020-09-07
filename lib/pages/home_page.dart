@@ -1,9 +1,7 @@
-import 'package:adityagurjar/config/assets.dart';
 import 'package:adityagurjar/tabs/about_tab.dart';
 import 'package:adityagurjar/tabs/blog_tab.dart';
 import 'package:adityagurjar/tabs/projects_tab.dart';
 import 'package:adityagurjar/tabs/videos_tab.dart';
-import 'package:adityagurjar/widgets/theme_inherited_widget.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -15,9 +13,8 @@ class _HomePageState extends State<HomePage> {
   int _selectedIndex = 0;
   static List<Widget> tabWidgets = <Widget>[
     AboutTab(),
-    BlogTab(),
-    ProjectsTab(),
     VideosTab(),
+    ProjectsTab(),
   ];
 
   @override
@@ -52,8 +49,8 @@ class _HomePageState extends State<HomePage> {
             title: Text('Home'),
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.account_circle),
-            title: Text('About'),
+            icon: Icon(Icons.videocam),
+            title: Text('Videos'),
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.photo),

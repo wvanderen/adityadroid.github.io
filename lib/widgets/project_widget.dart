@@ -13,7 +13,7 @@ class ProjectWidget extends StatelessWidget {
     final height = MediaQuery.of(context).size.height;
     return Card(
       child: InkWell(
-        onTap: onProjectClick,
+        // onTap: onProjectClick,
         child: Padding(
           padding: const EdgeInsets.all(2.0),
           child: Row(
@@ -62,9 +62,5 @@ class ProjectWidget extends StatelessWidget {
         ),
       ),
     );
-  }
-
-  void onProjectClick() {
-    if (_project.link != null) html.window.open(_project.link, 'adityadroid');
   }
 }

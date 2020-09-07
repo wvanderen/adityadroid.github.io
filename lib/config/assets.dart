@@ -2,6 +2,7 @@ class Assets {
   static const moon = 'assets/moon.png';
   static const avatar = 'assets/avatar.jpg';
   static const facebook = 'assets/facebook.png';
+  static const youtube = 'assets/youtube.png';
   static const github = 'assets/github.png';
   static const instagram = 'assets/instagram.png';
   static const linkedin = 'assets/linkedin.png';
@@ -29,4 +30,5 @@ class Assets {
   static const photo5 = 'assets/photos/photo5.jpg';
   static const photo6 = 'assets/photos/photo6.jpg';
   static const photo7 = 'assets/photos/photo7.jpg';
+  static const photo8 = 'assets/photos/photo8.png';
 }
