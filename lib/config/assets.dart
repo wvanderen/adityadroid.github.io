@@ -29,6 +29,6 @@ class Assets {
   static const photo4 = 'assets/photos/photo4.jpg';
   static const photo5 = 'assets/photos/photo5.jpg';
   static const photo6 = 'assets/photos/photo6.jpg';
-  static const photo7 = 'assets/photos/photo7.jpg';
+  static const photo7 = 'assets/photos/photo9.jpg';
   static const photo8 = 'assets/photos/photo8.png';
 }
